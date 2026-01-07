@@ -30,3 +30,23 @@ function respuestaBot(text) {
     return "Estoy trabajando para poder comprenderte mejor , gracias"
 
 }
+
+//Funcion para mandar el MSG
+
+function mandarMensaje(){
+    const text = input.value;
+    if(text === " ") return;  // Si no ponen nada no lo mandamos
+
+    //Mensaje de la persona (usamos la primer funcion)
+
+    agregarMensaje(text,"user");
+
+    //Agregamos un setTimeOut para un tiempo de respuesta(aqui podemos juguetearle con el tiempo)
+
+    setTimeout(() =>{
+        const reply = respuestaBot(text);
+        agregarMensaje(reply,"bot");
+    },300)
+
+}
+  

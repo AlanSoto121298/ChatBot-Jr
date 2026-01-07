@@ -18,6 +18,7 @@ function respuestaBot(text) {
     text = text.toLowerCase();
 
     if (text.includes("hola") || text.includes("mucho gusto")) return "Hola es un gusto conocerte";
+    if (text.includes("soy tu creador")) return "Es un gusto que me hagas mejorar Alan";
     if (text.includes("como estas")) return "Estoy bien y tu";
     if (text.includes("bien")) return "Me da gusto ";
     if (text.includes("mal")) return "Lo lamento mucho";

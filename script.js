@@ -35,35 +35,30 @@ function respuestaBot(text) {
 
 //Funcion para mandar el MSG
 
-function mandarMensaje(){
+
+function mandarMensaje() {
     const text = input.value;
-    if(text === "") return;  // Si no ponen nada no lo mandamos
 
-    //Mensaje de la persona (usamos la primer funcion)
+    if (text === "") return; //si esta vacio no se manda
 
+    //mensaje de la persona
     agregarMensaje(text, "user");
 
-    //Agregamos un setTimeOut para un tiempo de respuesta(aqui podemos juguetearle con el tiempo)
-
-    setTimeout(() =>{
+    //ponemos algo que simule tardar una respuesta
+    setTimeout(() => {
         const reply = respuestaBot(text);
         agregarMensaje(reply, "bot");
-    },300);
+    }, 300);
 
-    input.value = " ";  // aqui limpiamos el input xd
-
+    input.value = "";  //limpiamos el input xd
 }
-  
 
-//un evento click pa mandar el msg de la funcion
+//evento click como siempre
+boton.addEventListener("click", mandarMensaje);
 
-boton.addEventListener("click",mandarMensaje);
-
-//Evento keyup para mandar el msg al soltar boton
-
-input.addEventListener("keyup",function (a) {
-    if(a.key === "Enter"){
+//Evento presionar enter 
+input.addEventListener("keyup", function (a) {
+    if (a.key === "Enter") {
         mandarMensaje();
     }
-})
-
+});

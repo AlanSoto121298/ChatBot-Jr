@@ -28,7 +28,7 @@ function respuestaBot(text) {
     if(text.includes("adios")) return "cuidate";
 
 
-    return "Estoy trabajando para poder comprenderte mejor , gracias"
+    return "Estoy trabajando arduamente  para poder comprenderte mejor , gracias"
 
 }
 

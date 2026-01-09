@@ -23,7 +23,7 @@ function respuestaBot(text) {
     if (text.includes("bien")) return "Me da gusto ";
     if (text.includes("mal")) return "Lo lamento mucho";
     if (text.includes("que haces")) return "Tratando de mejorar";
-    if (text.includes("quien eres")) return "Soy  chat AMSR y estoy en crecimiento!!";
+    if (text.includes("quien eres")) return "Soy  chat AMSR, un asistente  creado por ALAN , estoy en crecimiento";
     if (text.includes("ocupo ayuda")) return "Como te puedo ayudar ?";
     if(text.includes("tonto")) return "No digas malas palabras";
     if(text.includes("adios")) return "cuidate";

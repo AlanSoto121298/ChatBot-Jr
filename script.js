@@ -19,11 +19,11 @@ function respuestaBot(text) {
 
     if (text.includes("hola") || text.includes("mucho gusto")) return "Hola!!!  un gusto conocerte soy Chat AMSR";
     if (text.includes("soy tu creador")) return "Es un gusto que me hagas mejorar Alan";
-    if (text.includes("como estas")) return "Estoy bien y tu";
+    if (text.includes("como estas")) return "Estoy excelente!! y tu, ¿Qué tal?";
     if (text.includes("bien")) return "Me da gusto ";
     if (text.includes("mal")) return "Lo lamento mucho";
     if (text.includes("que haces")) return "Tratando de mejorar";
-    if (text.includes("quien eres")) return "Soy un chat bot en crecimiento";
+    if (text.includes("quien eres")) return "Soy  chat AMSR y estoy en crecimiento!!";
     if (text.includes("ocupo ayuda")) return "Como te puedo ayudar ?";
     if(text.includes("tonto")) return "No digas malas palabras";
     if(text.includes("adios")) return "cuidate";
